@@ -51,7 +51,7 @@
             android:padding="30dp"
             android:text="Calculate your BMI"
             android:textAlignment="center"
-            android:textColor="@color/navy"
+            style="style/textViewColor"
             android:textSize="30sp"
             android:textStyle="italic" />
 
@@ -69,7 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/weightText"
-                    android:textColor="@color/black"
+                    style="style/textViewColor"
                     android:text="Weight"
                     android:textStyle="italic"
                     android:textSize="20sp"/>
@@ -79,7 +79,7 @@
                     android:id="@+id/weightEdit"
                     android:textSize="20sp"
                     android:hint="KG"
-                    android:textColor="@color/navy"
+                    style="style/textViewColor"
                     android:textAlignment="center"/>
 
 
