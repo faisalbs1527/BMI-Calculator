@@ -6,6 +6,27 @@
     </style>
 
     <style name="textViewColor">
-        <item name="color">#F4F2F2</item>
+        <item name="android:textColor">#E4DEDE</item>
+
     </style>
+
+
+    <style name="buttonColor">
+        <item name="android:textColor">#171515</item>
+        <item name="android:backgroundTint">#E3E6E6</item>
+
+    </style>
+
+    <style name="backColor">
+
+        <item name="android:backgroundTint">#353737</item>
+
+    </style>
+
+    <style name="switchColor">
+        <item name="android:textColor">#161717</item>
+
+    </style>
+
+
 </resources>
