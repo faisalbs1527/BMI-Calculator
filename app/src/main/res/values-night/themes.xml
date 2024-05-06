@@ -24,7 +24,8 @@
     </style>
 
     <style name="switchColor">
-        <item name="android:textColor">#161717</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:buttonTint">#161717</item>
 
     </style>
 

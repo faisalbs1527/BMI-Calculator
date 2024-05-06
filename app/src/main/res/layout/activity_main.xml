@@ -11,12 +11,12 @@
 
     <Switch
         android:id="@+id/switch1"
+        style="@style/switchColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:text="Dark Mode"
-        style="@style/switchColor"
-        android:fontFamily="@font/abril_fatface"/>
+        android:fontFamily="@font/abril_fatface"
+        android:text="Dark Mode" />
 
     <LinearLayout
         android:layout_width="match_parent"
