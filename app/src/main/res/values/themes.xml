@@ -2,14 +2,33 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.BMICalculator" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/navy</item>
-         <item name="colorPrimaryVariant">@color/navy</item>
-         <item name="android:statusBarColor">@color/navy</item>
+        <item name="colorPrimary">@color/navy</item>
+        <item name="colorPrimaryVariant">@color/navy</item>
+        <item name="android:statusBarColor">@color/navy</item>
     </style>
 
     <style name="Theme.BMICalculator" parent="Base.Theme.BMICalculator" />
 
     <style name="textViewColor">
-        <item name="color">#0C0B0B</item>
+        <item name="android:textColor">#0C0000</item>
+
     </style>
+    <style name="buttonColor">
+        <item name="android:textColor">#F3F3F3</item>
+        <item name="android:backgroundTint">#1C1B1B</item>
+
+    </style>
+    <style name="backColor">
+
+        <item name="android:backgroundTint">#DFECEC</item>
+
+    </style>
+
+    <style name="switchColor">
+        <item name="android:backgroundTint">#161717</item>
+    </style>
+
+
+
+
 </resources>

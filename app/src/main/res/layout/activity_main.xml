@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:text="Dark Mode"
+        style="@style/switchColor"
         android:fontFamily="@font/abril_fatface"/>
 
     <LinearLayout
@@ -41,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/card"
+        style="@style/backColor"
         android:orientation="vertical"
         android:layout_marginTop="10dp">
 
@@ -51,7 +53,7 @@
             android:padding="30dp"
             android:text="Calculate your BMI"
             android:textAlignment="center"
-            style="style/textViewColor"
+            style="@style/textViewColor"
             android:textSize="30sp"
             android:textStyle="italic" />
 
@@ -69,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/weightText"
-                    style="style/textViewColor"
+                    style="@style/textViewColor"
                     android:text="Weight"
                     android:textStyle="italic"
                     android:textSize="20sp"/>
@@ -79,7 +81,7 @@
                     android:id="@+id/weightEdit"
                     android:textSize="20sp"
                     android:hint="KG"
-                    style="style/textViewColor"
+                    style="@style/textViewColor"
                     android:textAlignment="center"/>
 
 
@@ -120,8 +122,9 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/akaya_telivigala"
             android:text="CALCULATE"
+            style="@style/buttonColor"
             android:textSize="16sp"
-            style="@style/textViewColor"
+
             android:layout_gravity="center"/>
         <TextView
             android:layout_width="wrap_content"
