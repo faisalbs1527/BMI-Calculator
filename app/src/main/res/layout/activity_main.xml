@@ -86,7 +86,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/heightText"
-                    android:textColor="@color/black"
+
+                    style="@style/textViewColor"
                     android:text="Height"
                     android:textStyle="italic"
                     android:textSize="20sp"/>
@@ -96,7 +97,7 @@
                     android:id="@+id/heightEdit"
                     android:textSize="20sp"
                     android:hint="CM"
-                    android:textColor="@color/navy"
+                    style="@style/textViewColor"
                     android:textAlignment="center"/>
 
 
@@ -112,6 +113,7 @@
             android:fontFamily="@font/akaya_telivigala"
             android:text="CALCULATE"
             android:textSize="16sp"
+            style="@style/textViewColor"
             android:layout_gravity="center"/>
         <TextView
             android:layout_width="wrap_content"
@@ -121,7 +123,8 @@
             android:text="Result"
             android:layout_marginTop="30dp"
             android:textSize="25sp"
-            android:textColor="@color/navy"
+            style="@style/textViewColor"
+
             android:fontFamily="@font/abril_fatface"/>
 
 
