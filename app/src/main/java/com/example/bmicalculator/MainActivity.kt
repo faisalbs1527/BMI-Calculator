@@ -34,12 +34,16 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        changeMode()
+    }
 
-        //        check what mood system containing
+    private fun changeMode(){
+        // check what mood system containing
         val isDarkModeinSystem =
             (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
 
 
+        // Checking Application Mode
         val sharePreferences = getSharedPreferences("Mode", Context.MODE_PRIVATE)
         val editor = sharePreferences.edit()
         var switchMode = binding.modeChange

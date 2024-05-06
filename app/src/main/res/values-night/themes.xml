@@ -13,7 +13,7 @@
 
     <style name="buttonColor">
         <item name="android:textColor">#171515</item>
-        <item name="android:backgroundTint">#E3E6E6</item>
+        <item name="android:backgroundTint">#F7FBFB</item>
 
     </style>
 
