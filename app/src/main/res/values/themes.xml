@@ -8,4 +8,8 @@
     </style>
 
     <style name="Theme.BMICalculator" parent="Base.Theme.BMICalculator" />
+
+    <style name="textViewColor">
+        <item name="color">#0C0B0B</item>
+    </style>
 </resources>
