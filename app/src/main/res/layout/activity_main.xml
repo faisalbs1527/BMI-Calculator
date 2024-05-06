@@ -80,6 +80,7 @@
                     android:layout_height="80dp"
                     android:id="@+id/weightEdit"
                     android:textSize="20sp"
+                    android:inputType="number"
                     android:hint="KG"
                     style="@style/textViewColor"
                     android:textAlignment="center"/>
@@ -106,6 +107,7 @@
                     android:layout_height="80dp"
                     android:id="@+id/heightEdit"
                     android:textSize="20sp"
+                    android:inputType="number"
                     android:hint="CM"
                     style="@style/textViewColor"
                     android:textAlignment="center"/>
