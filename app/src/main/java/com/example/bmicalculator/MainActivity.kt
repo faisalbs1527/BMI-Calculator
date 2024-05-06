@@ -1,8 +1,11 @@
 package com.example.bmicalculator
 
+import android.content.Context
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.bmicalculator.databinding.ActivityMainBinding
@@ -16,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -27,6 +32,47 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        changeMode()
+    }
+
+    private fun changeMode(){
+        // check what mood system containing
+        val isDarkModeinSystem =
+            (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+
+
+        // Checking Application Mode
+        val sharePreferences = getSharedPreferences("Mode", Context.MODE_PRIVATE)
+        val editor = sharePreferences.edit()
+        var switchMode = binding.modeChange
+
+        //check if the user is in night mode
+        val nightMode = sharePreferences.getBoolean("night", false)
+
+        if (nightMode) {
+            switchMode.isChecked = true
+        } else switchMode.isChecked = false
+
+
+        if (nightMode && !isDarkModeinSystem) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        }
+        if (!nightMode && isDarkModeinSystem) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+
+        switchMode.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                editor.putBoolean("night", true)
+                editor.apply()
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                editor.putBoolean("night", false)
+                editor.apply()
+            }
         }
     }
 
@@ -49,4 +95,6 @@ class MainActivity : AppCompatActivity() {
             binding.resultText.text = "Invalid Input"
         }
     }
+
+
 }
